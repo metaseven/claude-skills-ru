@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+import { url } from '../lib/url';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = 'Каталог скилов Claude на русском языке: поиск, фильтры, перевод и инструкции по установке.' } = Astro.props;
+const fullTitle = title === 'Скилы Claude на русском' ? title : `${title} — Скилы Claude на русском`;
+---
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <slot name="head" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href={url()}>Скилы <span>Claude</span> по-русски</a>
+        <nav>
+          <a href={url()}>Каталог</a>
+          <a href={url('about/')}>О проекте</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        Неофициальный перевод. Оригиналы скилов принадлежат их авторам — ссылка на источник есть на странице каждого скила.
+        Перевод выполнен с помощью ИИ и может содержать неточности.
+      </div>
+    </footer>
+  </body>
+</html>

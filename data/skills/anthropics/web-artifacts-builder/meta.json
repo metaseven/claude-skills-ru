@@ -1,0 +1,28 @@
+{
+  "source": "anthropics",
+  "slug": "web-artifacts-builder",
+  "name": "web-artifacts-builder",
+  "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+  "license": "Apache-2.0",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 3087,
+  "files": [
+    "LICENSE.txt",
+    "scripts/bundle-artifact.sh",
+    "scripts/init-artifact.sh",
+    "scripts/shadcn-components.tar.gz"
+  ],
+  "repo": "anthropics/skills",
+  "branch": "main",
+  "path": "skills/web-artifacts-builder",
+  "url": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "hash": "81c5002c6643b0de7b8710b00e7a9038daa6fb9b68d59870ee6adb12da8d10f8",
+  "plugin": "example-skills",
+  "install": [
+    "/plugin marketplace add anthropics/skills",
+    "/plugin install example-skills@anthropic-agent-skills"
+  ]
+}

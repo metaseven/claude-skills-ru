@@ -1,0 +1,36 @@
+{
+  "source": "anthropics",
+  "slug": "theme-factory",
+  "name": "theme-factory",
+  "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+  "license": "Apache-2.0",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 3124,
+  "files": [
+    "LICENSE.txt",
+    "theme-showcase.pdf",
+    "themes/arctic-frost.md",
+    "themes/botanical-garden.md",
+    "themes/desert-rose.md",
+    "themes/forest-canopy.md",
+    "themes/golden-hour.md",
+    "themes/midnight-galaxy.md",
+    "themes/modern-minimalist.md",
+    "themes/ocean-depths.md",
+    "themes/sunset-boulevard.md",
+    "themes/tech-innovation.md"
+  ],
+  "repo": "anthropics/skills",
+  "branch": "main",
+  "path": "skills/theme-factory",
+  "url": "https://github.com/anthropics/skills/tree/main/skills/theme-factory",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "hash": "c35893e221e28895c52143cc11bf30e41a44817796b39d4b15727dadc9796552",
+  "plugin": "example-skills",
+  "install": [
+    "/plugin marketplace add anthropics/skills",
+    "/plugin install example-skills@anthropic-agent-skills"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source": "superpowers",
+  "slug": "verification-before-completion",
+  "name": "verification-before-completion",
+  "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 3646,
+  "files": [],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/verification-before-completion",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/verification-before-completion",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

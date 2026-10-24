@@ -1,0 +1,25 @@
+{
+  "source": "superpowers",
+  "slug": "executing-plans",
+  "name": "executing-plans",
+  "description": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 18103,
+  "files": [
+    "scripts/task-done",
+    "scripts/task-start"
+  ],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/executing-plans",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/executing-plans",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "e4649e59880ef2643d1da128e3d607e87e3f969410d72095a5bf65811b6036dc",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

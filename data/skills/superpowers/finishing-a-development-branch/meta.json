@@ -1,0 +1,22 @@
+{
+  "source": "superpowers",
+  "slug": "finishing-a-development-branch",
+  "name": "finishing-a-development-branch",
+  "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 7781,
+  "files": [],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/finishing-a-development-branch",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

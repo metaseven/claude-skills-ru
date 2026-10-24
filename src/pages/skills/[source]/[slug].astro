@@ -1,0 +1,146 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getSkills, renderSkill, categoryTitle, sourceTitle, licenseLabel, type Skill } from '../../../lib/skills';
+import { url } from '../../../lib/url';
+
+export function getStaticPaths() {
+  return getSkills().map((skill) => ({
+    params: { source: skill.meta.source, slug: skill.meta.slug },
+    props: { skill },
+  }));
+}
+
+const { skill } = Astro.props as { skill: Skill };
+const { meta, ru } = skill;
+const ruHtml = meta.translationScope === 'full' ? renderSkill(skill, 'ru') : null;
+const enHtml = meta.translationScope === 'full' ? renderSkill(skill, 'en') : null;
+const zip = meta.redistributable ? url(`downloads/${meta.source}--${meta.slug}.zip`) : null;
+const builtIn = meta.source === 'anthropics' && meta.license === 'proprietary';
+---
+<Base title={skill.title} description={ru?.summary.what ?? skill.description}>
+  <div class="breadcrumbs">
+    <a href={url()}>Каталог</a> / <a href={url(`?source=${meta.source}`)}>{sourceTitle(meta.source)}</a>
+  </div>
+
+  <div class="skill-head" data-pagefind-body>
+    <h1 data-pagefind-meta="title">{skill.title}</h1>
+    <div class="name">{meta.name}</div>
+    <div class="badges" data-pagefind-ignore>
+      <span class="badge accent" data-pagefind-filter="Категория">{categoryTitle(skill.category)}</span>
+      <span class="badge">{sourceTitle(meta.source)}</span>
+      <span class="badge">Лицензия: {licenseLabel[meta.license] ?? meta.license}</span>
+      {skill.tags.map((t) => <span class="badge">#{t}</span>)}
+      {skill.outdated && <span class="badge warn">Оригинал обновился — перевод может отставать</span>}
+    </div>
+
+    <div class="skill-layout" style="margin-top: 24px">
+      <div>
+        {ru ? (
+          <section class="panel summary">
+            <h2>Коротко о скиле</h2>
+            <dl>
+              <div><dt>Что делает</dt><dd>{ru.summary.what}</dd></div>
+              <div><dt>Когда полезен</dt><dd>{ru.summary.when}</dd></div>
+              <div><dt>Пример запроса</dt><dd class="example">{ru.summary.example}</dd></div>
+            </dl>
+          </section>
+        ) : (
+          <p class="note">Перевод этого скила ещё готовится. Ниже — оригинальное описание.</p>
+        )}
+
+        <section class="panel">
+          <h2>Описание</h2>
+          <p style="margin:0">{skill.description}</p>
+          {ru && (
+            <details style="margin-top:12px" data-pagefind-ignore>
+              <summary class="small" style="cursor:pointer">Оригинал на английском</summary>
+              <p class="small">{meta.description}</p>
+            </details>
+          )}
+        </section>
+
+        {ruHtml ? (
+          <div class="tabs">
+            <input type="radio" name="lang" id="tab-ru" checked />
+            <input type="radio" name="lang" id="tab-en" />
+            <div class="tab-labels" data-pagefind-ignore>
+              <label for="tab-ru">Инструкция на русском</label>
+              <label for="tab-en">Оригинал (EN)</label>
+            </div>
+            <article class="tab-panel tab-ru prose" set:html={ruHtml} />
+            <article class="tab-panel tab-en prose" data-pagefind-ignore set:html={enHtml} />
+          </div>
+        ) : (
+          <p class="note" style="margin-top:16px" data-pagefind-ignore>
+            {meta.scopeReason === 'too-large'
+              ? 'Полная инструкция этого скила слишком большая для перевода целиком — здесь только описание и пересказ. '
+              : 'Лицензия этого скила не разрешает публиковать перевод полного текста — здесь только описание и пересказ. '}
+            Оригинал инструкции — <a href={meta.url}>на GitHub</a>.
+          </p>
+        )}
+      </div>
+
+      <aside data-pagefind-ignore>
+        <section class="panel">
+          <h2>Установка</h2>
+          {builtIn && (
+            <p class="small" style="margin-top:0">
+              В claude.ai этот скил уже встроен — достаточно включить «Code execution and file creation» в настройках.
+            </p>
+          )}
+          <div class="actions">
+            {zip && <a class="button" href={zip} download>Скачать zip</a>}
+            <a class={zip ? 'button secondary' : 'button'} href={meta.url}>Открыть на GitHub</a>
+          </div>
+
+          {meta.install.length > 0 && (
+            <>
+              <h3>Claude Code — через плагин</h3>
+              {meta.install.map((cmd) => (
+                <div class="cmd"><code>{cmd}</code><button class="copy" data-copy={cmd}>Копировать</button></div>
+              ))}
+            </>
+          )}
+
+          {zip && (
+            <>
+              <h3>Claude Code — вручную</h3>
+              <div class="small">Распакуйте архив в папку скилов:</div>
+              <div class="cmd"><code>unzip {meta.source}--{meta.slug}.zip -d ~/.claude/skills/</code><button class="copy" data-copy={`unzip ${meta.source}--${meta.slug}.zip -d ~/.claude/skills/`}>Копировать</button></div>
+              <h3>claude.ai</h3>
+              <ol class="small">
+                <li>Скачайте zip.</li>
+                <li>Откройте «Настройки» → «Возможности» (Capabilities) → «Скилы».</li>
+                <li>Нажмите «Загрузить скил» и выберите архив.</li>
+              </ol>
+            </>
+          )}
+          <p class="small" style="margin-bottom:0">Устанавливается оригинальная (английская) версия — Claude понимает её независимо от языка, на котором вы с ним общаетесь.</p>
+        </section>
+
+        <section class="panel">
+          <h2>О скиле</h2>
+          <ul class="meta-list">
+            <li><span>Источник</span><a href={`https://github.com/${meta.repo}`}>{meta.repo}</a></li>
+            <li><span>Лицензия</span><span>{licenseLabel[meta.license] ?? meta.license}</span></li>
+            <li><span>Файлов в скиле</span><span>{meta.files.length + 1}</span></li>
+            <li><span>Версия оригинала</span><a href={`https://github.com/${meta.repo}/commit/${meta.commit}`}><code>{meta.commit.slice(0, 7)}</code></a></li>
+            {ru && <li><span>Переведено</span><span>{ru.translatedAt}</span></li>}
+            {ru && <li><span>Модель</span><span>{ru.model}</span></li>}
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        await navigator.clipboard.writeText(btn.dataset.copy!);
+        const text = btn.textContent;
+        btn.textContent = 'Скопировано';
+        setTimeout(() => (btn.textContent = text), 1500);
+      });
+    });
+  </script>
+</Base>

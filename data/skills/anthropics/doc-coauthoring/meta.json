@@ -1,0 +1,23 @@
+{
+  "source": "anthropics",
+  "slug": "doc-coauthoring",
+  "name": "doc-coauthoring",
+  "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+  "license": "unknown",
+  "redistributable": false,
+  "translationScope": "summary",
+  "scopeReason": "license",
+  "bytes": 15815,
+  "files": [],
+  "repo": "anthropics/skills",
+  "branch": "main",
+  "path": "skills/doc-coauthoring",
+  "url": "https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "hash": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4",
+  "plugin": "example-skills",
+  "install": [
+    "/plugin marketplace add anthropics/skills",
+    "/plugin install example-skills@anthropic-agent-skills"
+  ]
+}

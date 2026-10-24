@@ -1,0 +1,32 @@
+{
+  "source": "superpowers",
+  "slug": "writing-skills",
+  "name": "writing-skills",
+  "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 16738,
+  "files": [
+    "references/CLAUDE_MD_TESTING.md",
+    "references/anthropic-best-practices.md",
+    "references/bulletproofing.md",
+    "references/discovery.md",
+    "references/flowcharts.md",
+    "references/graphviz-conventions.dot",
+    "references/persuasion-principles.md",
+    "references/testing-skills-with-subagents.md",
+    "render-graphs.js"
+  ],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/writing-skills",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/writing-skills",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "8cb3ac68c6d8c4bb46886b998b09af7989643cab8bd0e46ee86dd62e64546bbe",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

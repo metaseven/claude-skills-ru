@@ -1,0 +1,22 @@
+{
+  "source": "superpowers",
+  "slug": "receiving-code-review",
+  "name": "receiving-code-review",
+  "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 6203,
+  "files": [],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/receiving-code-review",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/receiving-code-review",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

@@ -1,0 +1,141 @@
+---
+import Base from '../layouts/Base.astro';
+import { getSkills, categories, categoryTitle, sources } from '../lib/skills';
+import { url } from '../lib/url';
+
+const skills = getSkills();
+const countBy = (key: (s: (typeof skills)[number]) => string, id: string) => skills.filter((s) => key(s) === id).length;
+const usedCategories = categories.filter((c) => countBy((s) => s.category, c.id) > 0);
+---
+<Base title="Скилы Claude на русском">
+  <link slot="head" href={url('pagefind/pagefind-ui.css')} rel="stylesheet" />
+
+  <h1>Скилы Claude на русском</h1>
+  <p class="lead">
+    {skills.length} скилов из официального репозитория Anthropic и сообщества — с русским описанием,
+    пересказом «что делает и когда полезен» и инструкцией по установке.
+  </p>
+
+  <div class="toolbar">
+    <input id="q" class="search-input" type="search" placeholder="Найти скил: pdf, тесты, дизайн, планирование…" autocomplete="off" aria-label="Поиск по названию и описанию" />
+    <div class="chips" role="group" aria-label="Категория">
+      <button class="chip" data-filter="category" data-value="" aria-pressed="true">Все категории</button>
+      {usedCategories.map((c) => (
+        <button class="chip" data-filter="category" data-value={c.id} aria-pressed="false">
+          {c.title}<span class="count">{countBy((s) => s.category, c.id)}</span>
+        </button>
+      ))}
+    </div>
+    <div class="chips" role="group" aria-label="Источник">
+      <button class="chip" data-filter="source" data-value="" aria-pressed="true">Все источники</button>
+      {sources.map((s) => (
+        <button class="chip" data-filter="source" data-value={s.id} aria-pressed="false">
+          {s.title}<span class="count">{countBy((x) => x.meta.source, s.id)}</span>
+        </button>
+      ))}
+    </div>
+    <div class="result-count" id="count" aria-live="polite"></div>
+  </div>
+
+  <details class="fulltext">
+    <summary>Искать по полному тексту инструкций скилов</summary>
+    <div id="pagefind"></div>
+  </details>
+
+  <div class="grid" id="grid">
+    {skills.map((s) => (
+      <a
+        class="card"
+        href={url(`skills/${s.id}/`)}
+        data-category={s.category}
+        data-source={s.meta.source}
+        data-search={[s.title, s.meta.name, s.description, s.meta.description, s.ru?.summary.what, s.tags.join(' ')].join(' ').toLowerCase()}
+      >
+        <div>
+          <h3>{s.title}</h3>
+          <div class="name">{s.meta.name}</div>
+        </div>
+        <p>{s.ru?.summary.what ?? s.description}</p>
+        <div class="badges">
+          <span class="badge accent">{categoryTitle(s.category)}</span>
+          {s.meta.source === 'anthropics' && <span class="badge">Anthropic</span>}
+          {s.meta.source !== 'anthropics' && <span class="badge">Сообщество</span>}
+          {!s.ru && <span class="badge warn">Перевод готовится</span>}
+        </div>
+      </a>
+    ))}
+  </div>
+  <p class="empty" id="empty" hidden>Ничего не найдено. Попробуйте другой запрос или сбросьте фильтры.</p>
+
+  <script>
+    const q = document.getElementById('q') as HTMLInputElement;
+    const cards = [...document.querySelectorAll<HTMLElement>('#grid .card')];
+    const count = document.getElementById('count')!;
+    const empty = document.getElementById('empty')!;
+    const state: Record<string, string> = { category: '', source: '' };
+
+    // Состояние в URL — фильтрованный каталог можно отправить ссылкой.
+    const params = new URLSearchParams(location.search);
+    q.value = params.get('q') ?? '';
+    for (const key of Object.keys(state)) state[key] = params.get(key) ?? '';
+
+    function plural(n: number) {
+      const m10 = n % 10, m100 = n % 100;
+      if (m10 === 1 && m100 !== 11) return 'скил';
+      if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return 'скила';
+      return 'скилов';
+    }
+
+    function apply() {
+      const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      let shown = 0;
+      for (const card of cards) {
+        const ok =
+          (!state.category || card.dataset.category === state.category) &&
+          (!state.source || card.dataset.source === state.source) &&
+          words.every((w) => card.dataset.search!.includes(w));
+        card.hidden = !ok;
+        if (ok) shown++;
+      }
+      count.textContent = `Найдено: ${shown} ${plural(shown)}`;
+      empty.hidden = shown > 0;
+      document.querySelectorAll<HTMLButtonElement>('.chip').forEach((chip) => {
+        chip.setAttribute('aria-pressed', String(state[chip.dataset.filter!] === chip.dataset.value));
+      });
+      const next = new URLSearchParams();
+      if (q.value) next.set('q', q.value);
+      for (const [k, v] of Object.entries(state)) if (v) next.set(k, v);
+      history.replaceState(null, '', next.size ? `?${next}` : location.pathname);
+    }
+
+    q.addEventListener('input', apply);
+    document.querySelectorAll<HTMLButtonElement>('.chip').forEach((chip) => {
+      chip.addEventListener('click', () => {
+        state[chip.dataset.filter!] = chip.dataset.value!;
+        apply();
+      });
+    });
+    apply();
+
+    // Pagefind появляется только после `npm run build` — в dev-режиме блок просто пустой.
+    const details = document.querySelector<HTMLDetailsElement>('.fulltext')!;
+    details.addEventListener('toggle', async () => {
+      if (!details.open || details.dataset.loaded) return;
+      details.dataset.loaded = '1';
+      const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+      try {
+        await new Promise((resolve, reject) => {
+          const s = document.createElement('script');
+          s.src = `${base}/pagefind/pagefind-ui.js`;
+          s.onload = resolve;
+          s.onerror = reject;
+          document.head.append(s);
+        });
+        // @ts-ignore — глобальный класс из pagefind-ui.js
+        new PagefindUI({ element: '#pagefind', showSubResults: true, showImages: false, resetStyles: false });
+      } catch {
+        document.getElementById('pagefind')!.textContent = 'Полнотекстовый поиск доступен в собранной версии сайта.';
+      }
+    });
+  </script>
+</Base>

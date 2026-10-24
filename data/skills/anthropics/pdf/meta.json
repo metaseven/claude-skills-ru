@@ -1,0 +1,35 @@
+{
+  "source": "anthropics",
+  "slug": "pdf",
+  "name": "pdf",
+  "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+  "license": "proprietary",
+  "redistributable": false,
+  "translationScope": "summary",
+  "scopeReason": "license",
+  "bytes": 8072,
+  "files": [
+    "LICENSE.txt",
+    "forms.md",
+    "reference.md",
+    "scripts/check_bounding_boxes.py",
+    "scripts/check_fillable_fields.py",
+    "scripts/convert_pdf_to_images.py",
+    "scripts/create_validation_image.py",
+    "scripts/extract_form_field_info.py",
+    "scripts/extract_form_structure.py",
+    "scripts/fill_fillable_fields.py",
+    "scripts/fill_pdf_form_with_annotations.py"
+  ],
+  "repo": "anthropics/skills",
+  "branch": "main",
+  "path": "skills/pdf",
+  "url": "https://github.com/anthropics/skills/tree/main/skills/pdf",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "hash": "9f78b8359fbd4943ad260a7a1e436e5a96503406d6c34e99f69223d647d85b9c",
+  "plugin": "document-skills",
+  "install": [
+    "/plugin marketplace add anthropics/skills",
+    "/plugin install document-skills@anthropic-agent-skills"
+  ]
+}

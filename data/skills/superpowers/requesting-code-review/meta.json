@@ -1,0 +1,24 @@
+{
+  "source": "superpowers",
+  "slug": "requesting-code-review",
+  "name": "requesting-code-review",
+  "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 2974,
+  "files": [
+    "code-reviewer.md"
+  ],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/requesting-code-review",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/requesting-code-review",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "2180e14a448e9410bec88e6646a2d1f0ce7fdd58de27388c1e052e929679d2bc",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

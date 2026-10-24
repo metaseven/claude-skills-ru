@@ -1,0 +1,25 @@
+[
+  {
+    "id": "anthropics",
+    "title": "Anthropic (официальные)",
+    "repo": "anthropics/skills",
+    "branch": "main",
+    "skillsPath": "skills",
+    "marketplace": ".claude-plugin/marketplace.json",
+    "install": [
+      "/plugin marketplace add anthropics/skills",
+      "/plugin install {plugin}@anthropic-agent-skills"
+    ]
+  },
+  {
+    "id": "superpowers",
+    "title": "Superpowers (obra)",
+    "repo": "obra/superpowers",
+    "branch": "main",
+    "skillsPath": "skills",
+    "repoLicense": "MIT",
+    "install": [
+      "/plugin install superpowers@claude-plugins-official"
+    ]
+  }
+]

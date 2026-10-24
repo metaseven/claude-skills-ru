@@ -1,0 +1,30 @@
+{
+  "source": "superpowers",
+  "slug": "using-superpowers",
+  "name": "using-superpowers",
+  "description": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 3192,
+  "files": [
+    "references/antigravity-tools.md",
+    "references/claude-code-tools.md",
+    "references/codex-tools.md",
+    "references/gemini-tools.md",
+    "references/hermes-tools.md",
+    "references/muse-tools.md",
+    "references/pi-tools.md"
+  ],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/using-superpowers",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/using-superpowers",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

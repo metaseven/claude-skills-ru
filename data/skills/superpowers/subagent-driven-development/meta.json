@@ -1,0 +1,36 @@
+{
+  "source": "superpowers",
+  "slug": "subagent-driven-development",
+  "name": "subagent-driven-development",
+  "description": "Use when executing implementation plans with independent tasks in the current session",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 19506,
+  "files": [
+    "implementer-prompt.md",
+    "re-review-prompt.md",
+    "references/batching.md",
+    "references/cannot-verify.md",
+    "references/final-review.md",
+    "references/fix-loop.md",
+    "references/handling-reports.md",
+    "references/preflight.md",
+    "references/resuming.md",
+    "scripts/review-package",
+    "scripts/sdd-workspace",
+    "scripts/task-brief",
+    "task-reviewer-prompt.md"
+  ],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/subagent-driven-development",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "ba41f697136cba88a7962d60c8e2f97488ba04a8688b1d0fbeb27f6953808e75",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "source": "anthropics",
+  "slug": "webapp-testing",
+  "name": "webapp-testing",
+  "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+  "license": "Apache-2.0",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 3913,
+  "files": [
+    "LICENSE.txt",
+    "examples/console_logging.py",
+    "examples/element_discovery.py",
+    "examples/static_html_automation.py",
+    "scripts/with_server.py"
+  ],
+  "repo": "anthropics/skills",
+  "branch": "main",
+  "path": "skills/webapp-testing",
+  "url": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "hash": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2",
+  "plugin": "example-skills",
+  "install": [
+    "/plugin marketplace add anthropics/skills",
+    "/plugin install example-skills@anthropic-agent-skills"
+  ]
+}

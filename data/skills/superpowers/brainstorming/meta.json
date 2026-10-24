@@ -1,0 +1,30 @@
+{
+  "source": "superpowers",
+  "slug": "brainstorming",
+  "name": "brainstorming",
+  "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 13602,
+  "files": [
+    "builder-check-prompt.md",
+    "scripts/frame-template.html",
+    "scripts/helper.js",
+    "scripts/server.cjs",
+    "scripts/start-server.sh",
+    "scripts/stop-server.sh",
+    "visual-companion.md"
+  ],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/brainstorming",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "61a7ef918652108c76a3fd01e02dd92d39996c6b46d4cb2819cbd03f6c45e46a",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

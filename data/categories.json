@@ -1,0 +1,9 @@
+[
+  { "id": "documents", "title": "Документы и файлы" },
+  { "id": "design", "title": "Дизайн и графика" },
+  { "id": "development", "title": "Разработка" },
+  { "id": "testing", "title": "Тестирование и отладка" },
+  { "id": "workflow", "title": "Процессы и планирование" },
+  { "id": "writing", "title": "Тексты и коммуникации" },
+  { "id": "claude", "title": "Работа с Claude" }
+]

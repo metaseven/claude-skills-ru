@@ -1,0 +1,41 @@
+# Раз в неделю проверяет источники и открывает (или обновляет) issue со списком скилов,
+# которым нужен перевод. Сам перевод запускается локально: npm run sync, затем /translate-skills.
+name: Check sources
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run sync
+      - name: Open or update issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          body="$(node scripts/status.mjs --md)"
+          count="$(node scripts/status.mjs --json | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).length))')"
+          title="Нужен перевод скилов"
+          existing="$(gh issue list --state open --search "in:title $title" --json number --jq '.[0].number')"
+          if [ "$count" = "0" ]; then
+            if [ -n "$existing" ]; then gh issue close "$existing" --comment "Все переводы актуальны."; fi
+            exit 0
+          fi
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi

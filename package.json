@@ -1,0 +1,26 @@
+{
+  "name": "claude-skills-ru",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "sync": "node scripts/sync.mjs",
+    "status": "node scripts/status.mjs",
+    "validate": "node scripts/validate.mjs",
+    "translate:local": "node scripts/translate-local.mjs",
+    "zips": "node scripts/build-zips.mjs",
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "5.18.2",
+    "gray-matter": "4.0.3",
+    "marked": "18.1.1"
+  },
+  "devDependencies": {
+    "pagefind": "1.5.2"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "source": "superpowers",
+  "slug": "dispatching-parallel-agents",
+  "name": "dispatching-parallel-agents",
+  "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 6078,
+  "files": [],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/dispatching-parallel-agents",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/dispatching-parallel-agents",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source": "superpowers",
+  "slug": "writing-plans",
+  "name": "writing-plans",
+  "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 10335,
+  "files": [],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/writing-plans",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/writing-plans",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

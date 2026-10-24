@@ -1,0 +1,42 @@
+{
+  "source": "superpowers",
+  "slug": "diagnosing-superpowers",
+  "name": "diagnosing-superpowers",
+  "description": "Use when a superpowers session went wrong and your human partner wants to know why — repeated work, ignored plans, stumbles, poor results, a skill that didn't fire, \"it took too long\", \"why is it so expensive\", \"what is it doing\" — or wants to build a bug report for the superpowers maintainers, for the current session or a past one identified by id or path, on any harness.",
+  "license": "MIT",
+  "redistributable": true,
+  "translationScope": "full",
+  "scopeReason": null,
+  "bytes": 6941,
+  "files": [
+    "prompts/analyst-common.md",
+    "prompts/cost-and-time.md",
+    "prompts/plan-adherence.md",
+    "prompts/quality-evidence.md",
+    "prompts/repeated-work.md",
+    "prompts/request-conflicts.md",
+    "prompts/scrub-audit.md",
+    "prompts/scrub.md",
+    "prompts/similar-session.md",
+    "prompts/skill-timeline.md",
+    "prompts/stumbles.md",
+    "references/context-safety.md",
+    "references/github-issues.md",
+    "references/redaction-policy.md",
+    "references/session-discovery.md",
+    "templates/bundle-README.md",
+    "templates/case.md",
+    "templates/issue.md",
+    "templates/report.md"
+  ],
+  "repo": "obra/superpowers",
+  "branch": "main",
+  "path": "skills/diagnosing-superpowers",
+  "url": "https://github.com/obra/superpowers/tree/main/skills/diagnosing-superpowers",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+  "hash": "3143de8695c5a2d63e8b1675f33837578076f464deb127c2ebdd0b46fceef886",
+  "plugin": null,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}
