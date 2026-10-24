@@ -65,9 +65,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/xlsx",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/xlsx",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "6712b39718fe815054abca9c3ee72f989613e6f771c8a5c58f30a65a6c905622",
+  "treeHash": "63a846e008951176dd69b274810421dc868b3c3c3403694e86a2c5124abb7bd0",
   "plugin": "document-skills",
   "install": [
     "/plugin marketplace add anthropics/skills",

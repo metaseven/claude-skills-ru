@@ -1,0 +1,342 @@
+{
+  "anthropics/academy-guide": {
+    "treeHash": "b10a0c2ba3a42e29b454cec73b0dc590c250ff0460bd634ae409b0711d0ce337",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "anthropics/brand-guidelines": {
+    "treeHash": "ceabc11d075e174c92cb51df6a4ee19e5effd8a713d1529383c35a4eaa19eb4d",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "anthropics/canvas-design": {
+    "treeHash": "6a5f1af9694541f5f2152c344e9e53b6be0dceb51ddbcf7a75a773728663a63e",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 1
+    }
+  },
+  "anthropics/discernment-nudge": {
+    "treeHash": "00ba764ef81d87e33c8fc364769d7de2cf808c16108f40bd09aa8e86660a70b0",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "anthropics/doc-coauthoring": {
+    "treeHash": "ac9739b49547f7f2ea448ba5f3a8ae68a4ebf9c150a1d496aff948dfd3fe002e",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "anthropics/docx": {
+    "treeHash": "616156c40ee8ffe1936ce63bbeff9705a8cd9bb1e2877839ca153576356aaf6a",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 6
+    }
+  },
+  "anthropics/frontend-design": {
+    "treeHash": "d00e5e78be144b88160a6c61e9d0dec8a703c84e8002e7aa56e08eeb9dfb361c",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "anthropics/internal-comms": {
+    "treeHash": "ddcc7374597901d1e06cdd04fd577eeeaa4c284b3f903034f6fcb839386abc47",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "anthropics/mcp-builder": {
+    "treeHash": "0bfa256d9b69c986653e6671098f638ab93c1a9ea3b00294064721db99467c6b",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 1
+    }
+  },
+  "anthropics/pdf": {
+    "treeHash": "a08480c68bb2ccb42a9fa95b3b1d009333719135708d8373a73702d80a4a4c6e",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 2
+    }
+  },
+  "anthropics/slack-gif-creator": {
+    "treeHash": "1949d7a9e1fc6ce0034b553143b272adc9c5dc9b82566c0e781431f7067bcb96",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 5
+    }
+  },
+  "anthropics/theme-factory": {
+    "treeHash": "7e9a7bbbc82156e6fe7a41834e8a60282d470a94dc33cbdbc37bb00bd7dad1e3",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 1
+    }
+  },
+  "anthropics/web-artifacts-builder": {
+    "treeHash": "7f548361ec4e403c6023baa1adda8ee1e225ff1f46cd1f7ec92c2e414e39cfea",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 4
+    }
+  },
+  "anthropics/webapp-testing": {
+    "treeHash": "380c5aca598b329c0a557b0499bd1f63ce0d378f6f6af52fe2e5c89a11f0d29a",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 2
+    }
+  },
+  "anthropics/xlsx": {
+    "treeHash": "63a846e008951176dd69b274810421dc868b3c3c3403694e86a2c5124abb7bd0",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 3
+    }
+  },
+  "superpowers/diagnosing-superpowers": {
+    "treeHash": "ef95d7671ce5c9abcefd737897a3c0a365d26cecca4155825f079fd012798b26",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "superpowers/dispatching-parallel-agents": {
+    "treeHash": "24c720b5624ce789560ec9fe227eff9baaeebb7745646cf2f7df29565c23e141",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "superpowers/executing-plans": {
+    "treeHash": "d54be2980270203192a7c3cba78417c8709ca02a1ed0326c3a0db80fcea63bc0",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 2
+    }
+  },
+  "superpowers/finishing-a-development-branch": {
+    "treeHash": "addffe21c64918eda1925f02022774c3e1df7db5377be75c291802227768c5cf",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "superpowers/receiving-code-review": {
+    "treeHash": "9e67888034ed1c6d60fdaf72212785b985c577d29def0337ec729fae2739f9c2",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "superpowers/requesting-code-review": {
+    "treeHash": "589b5cfa761559e2d4cc4db03f7af0fe5047a769d78792943522e5d93ddb4cf8",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "superpowers/subagent-driven-development": {
+    "treeHash": "5d0540a3ce7049902c29f5390fb1083d8543c91718964562be1f020a3ff3c19c",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 3
+    }
+  },
+  "superpowers/systematic-debugging": {
+    "treeHash": "c74fc23caad8c6d934b26b7104e73fa0843409712731b4635f4f7082e96fb036",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 2
+    }
+  },
+  "superpowers/test-driven-development": {
+    "treeHash": "7737cde5b79ff554a83a5b8dd9a87c6250b268219c3aaf8f050669caba68e8a4",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "superpowers/using-git-worktrees": {
+    "treeHash": "90cf9bff0b647fbb8571a2933c61304218fd29e52e00784c6043ddac3d4ba43f",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "superpowers/using-superpowers": {
+    "treeHash": "49d8246467e384c73243ddc22698cbc00ce94755221c4a8ced1f4fb3129bf6f3",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "superpowers/verification-before-completion": {
+    "treeHash": "d814ecc4d6a11c2f0a28611421ba30f003732973845bb2eeef835f727b372539",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "superpowers/writing-plans": {
+    "treeHash": "710874df8470dd2b8c06ec32bcbd6138cb465d096cd548cb125a22c5f58f2212",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 0
+    }
+  },
+  "superpowers/writing-skills": {
+    "treeHash": "503d51e524de410d9203f1b8b59cd82d0d541cfd49bd0e7a389180e300557c6b",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 0,
+      "info": 2
+    }
+  },
+  "anthropics/algorithmic-art": {
+    "treeHash": "246dd11e54735a5a547582707471222c4cd665f21e7d902b022aeba93d8964d1",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 3,
+      "info": 1
+    }
+  },
+  "anthropics/claude-api": {
+    "treeHash": "1b75b5722df63b2f87ce2e09c1ad9cd3c5a6187dddaf7b8b882e0b8b89bfcbec",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 18,
+      "info": 1
+    }
+  },
+  "anthropics/pptx": {
+    "treeHash": "ff3875f47dea296c404d8c0b395579fc0efcf27cc60db1fbe6b7308bdb84478c",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 1,
+      "info": 5
+    }
+  },
+  "anthropics/skill-creator": {
+    "treeHash": "bbf8e8180f17f387d72b0680c91e29823a990738ced031c0d4e53989771da061",
+    "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 6,
+      "info": 8
+    }
+  },
+  "superpowers/brainstorming": {
+    "treeHash": "ec52be1f4164a22af32f72901249628dafddd4914869f81d9e2ba11ee099aea1",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "approvedAt": "2026-10-24",
+    "findings": {
+      "block": 0,
+      "review": 3,
+      "info": 3
+    }
+  }
+}

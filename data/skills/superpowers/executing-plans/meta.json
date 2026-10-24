@@ -15,9 +15,10 @@
   "repo": "obra/superpowers",
   "branch": "main",
   "path": "skills/executing-plans",
-  "url": "https://github.com/obra/superpowers/tree/main/skills/executing-plans",
+  "url": "https://github.com/obra/superpowers/tree/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/executing-plans",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "hash": "e4649e59880ef2643d1da128e3d607e87e3f969410d72095a5bf65811b6036dc",
+  "treeHash": "d54be2980270203192a7c3cba78417c8709ca02a1ed0326c3a0db80fcea63bc0",
   "plugin": null,
   "install": [
     "/plugin install superpowers@claude-plugins-official"

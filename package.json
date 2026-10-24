@@ -7,8 +7,12 @@
   },
   "scripts": {
     "sync": "node scripts/sync.mjs",
+    "approve": "node scripts/approve.mjs",
     "status": "node scripts/status.mjs",
     "validate": "node scripts/validate.mjs",
+    "test:security": "node tests/security.test.mjs",
+    "translate:start": "node scripts/translate-mode.mjs start",
+    "translate:end": "node scripts/translate-mode.mjs end",
     "translate:local": "node scripts/translate-local.mjs",
     "zips": "node scripts/build-zips.mjs",
     "dev": "astro dev",
@@ -17,7 +21,7 @@
   },
   "dependencies": {
     "astro": "5.18.2",
-    "gray-matter": "4.0.3",
+    "js-yaml": "4.3.2",
     "marked": "18.1.1"
   },
   "devDependencies": {

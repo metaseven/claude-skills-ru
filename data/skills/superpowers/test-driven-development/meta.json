@@ -14,9 +14,10 @@
   "repo": "obra/superpowers",
   "branch": "main",
   "path": "skills/test-driven-development",
-  "url": "https://github.com/obra/superpowers/tree/main/skills/test-driven-development",
+  "url": "https://github.com/obra/superpowers/tree/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/test-driven-development",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "hash": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d",
+  "treeHash": "7737cde5b79ff554a83a5b8dd9a87c6250b268219c3aaf8f050669caba68e8a4",
   "plugin": null,
   "install": [
     "/plugin install superpowers@claude-plugins-official"

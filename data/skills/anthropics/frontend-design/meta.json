@@ -14,9 +14,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/frontend-design",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+  "treeHash": "d00e5e78be144b88160a6c61e9d0dec8a703c84e8002e7aa56e08eeb9dfb361c",
   "plugin": "example-skills",
   "install": [
     "/plugin marketplace add anthropics/skills",

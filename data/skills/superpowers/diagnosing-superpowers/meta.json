@@ -32,9 +32,10 @@
   "repo": "obra/superpowers",
   "branch": "main",
   "path": "skills/diagnosing-superpowers",
-  "url": "https://github.com/obra/superpowers/tree/main/skills/diagnosing-superpowers",
+  "url": "https://github.com/obra/superpowers/tree/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/diagnosing-superpowers",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "hash": "3143de8695c5a2d63e8b1675f33837578076f464deb127c2ebdd0b46fceef886",
+  "treeHash": "ef95d7671ce5c9abcefd737897a3c0a365d26cecca4155825f079fd012798b26",
   "plugin": null,
   "install": [
     "/plugin install superpowers@claude-plugins-official"

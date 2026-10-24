@@ -25,9 +25,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/theme-factory",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/theme-factory",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/theme-factory",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "c35893e221e28895c52143cc11bf30e41a44817796b39d4b15727dadc9796552",
+  "treeHash": "7e9a7bbbc82156e6fe7a41834e8a60282d470a94dc33cbdbc37bb00bd7dad1e3",
   "plugin": "example-skills",
   "install": [
     "/plugin marketplace add anthropics/skills",

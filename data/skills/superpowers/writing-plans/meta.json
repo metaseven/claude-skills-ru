@@ -12,9 +12,10 @@
   "repo": "obra/superpowers",
   "branch": "main",
   "path": "skills/writing-plans",
-  "url": "https://github.com/obra/superpowers/tree/main/skills/writing-plans",
+  "url": "https://github.com/obra/superpowers/tree/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/writing-plans",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "hash": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a",
+  "treeHash": "710874df8470dd2b8c06ec32bcbd6138cb465d096cd548cb125a22c5f58f2212",
   "plugin": null,
   "install": [
     "/plugin install superpowers@claude-plugins-official"

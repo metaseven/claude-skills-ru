@@ -68,9 +68,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/pptx",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/pptx",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/pptx",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "a7ff03e2c85b636f55232a6b1555f5dd90216b7a1a359ab289d8364e6acbc6a0",
+  "treeHash": "ff3875f47dea296c404d8c0b395579fc0efcf27cc60db1fbe6b7308bdb84478c",
   "plugin": "document-skills",
   "install": [
     "/plugin marketplace add anthropics/skills",

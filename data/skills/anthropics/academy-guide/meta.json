@@ -14,9 +14,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/academy-guide",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/academy-guide",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/academy-guide",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "f27992510c051355dfe68c92394d509af730da5298094ec86834ee40bbd31376",
+  "treeHash": "b10a0c2ba3a42e29b454cec73b0dc590c250ff0460bd634ae409b0711d0ce337",
   "plugin": "academy-guide",
   "install": [
     "/plugin marketplace add anthropics/skills",

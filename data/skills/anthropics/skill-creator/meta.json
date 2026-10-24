@@ -30,9 +30,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/skill-creator",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+  "treeHash": "bbf8e8180f17f387d72b0680c91e29823a990738ced031c0d4e53989771da061",
   "plugin": "example-skills",
   "install": [
     "/plugin marketplace add anthropics/skills",

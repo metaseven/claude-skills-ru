@@ -22,9 +22,10 @@
   "repo": "obra/superpowers",
   "branch": "main",
   "path": "skills/writing-skills",
-  "url": "https://github.com/obra/superpowers/tree/main/skills/writing-skills",
+  "url": "https://github.com/obra/superpowers/tree/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/writing-skills",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "hash": "8cb3ac68c6d8c4bb46886b998b09af7989643cab8bd0e46ee86dd62e64546bbe",
+  "treeHash": "503d51e524de410d9203f1b8b59cd82d0d541cfd49bd0e7a389180e300557c6b",
   "plugin": null,
   "install": [
     "/plugin install superpowers@claude-plugins-official"

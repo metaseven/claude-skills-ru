@@ -23,9 +23,10 @@
   "repo": "obra/superpowers",
   "branch": "main",
   "path": "skills/systematic-debugging",
-  "url": "https://github.com/obra/superpowers/tree/main/skills/systematic-debugging",
+  "url": "https://github.com/obra/superpowers/tree/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/systematic-debugging",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "hash": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202",
+  "treeHash": "c74fc23caad8c6d934b26b7104e73fa0843409712731b4635f4f7082e96fb036",
   "plugin": null,
   "install": [
     "/plugin install superpowers@claude-plugins-official"

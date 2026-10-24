@@ -6,12 +6,6 @@
       "runtimeExecutable": "/bin/sh",
       "runtimeArgs": ["-c", "cd '/Users/grigorij/Documents/Dev/skill adapter' && export PATH=$HOME/.nvm/versions/node/v22.14.0/bin:$PATH BASE_PATH=/claude-skills-ru && npx astro preview --port 4321"],
       "port": 4321
-    },
-    {
-      "name": "preview-static",
-      "runtimeExecutable": "/usr/bin/python3",
-      "runtimeArgs": ["-m", "http.server", "4322", "--directory", "/private/tmp/claude-501/-Users-grigorij-Documents-Dev-skill-adapter/525fc05f-e426-4189-8292-6060d7f6f478/scratchpad/site"],
-      "port": 4322
     }
   ]
 }

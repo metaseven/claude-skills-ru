@@ -14,9 +14,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/discernment-nudge",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/discernment-nudge",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/discernment-nudge",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "9191177c4a8ef11a20dace786d708506b22d43e748c71287bb823de0dc812dad",
+  "treeHash": "00ba764ef81d87e33c8fc364769d7de2cf808c16108f40bd09aa8e86660a70b0",
   "plugin": "discernment-nudge",
   "install": [
     "/plugin marketplace add anthropics/skills",

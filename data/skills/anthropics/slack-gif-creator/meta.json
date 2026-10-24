@@ -19,9 +19,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/slack-gif-creator",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/slack-gif-creator",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "2efca615ce55a3edd8fc05c779068a8085816617991987e446606403cd3abb22",
+  "treeHash": "1949d7a9e1fc6ce0034b553143b272adc9c5dc9b82566c0e781431f7067bcb96",
   "plugin": "example-skills",
   "install": [
     "/plugin marketplace add anthropics/skills",

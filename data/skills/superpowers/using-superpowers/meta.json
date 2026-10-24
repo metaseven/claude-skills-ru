@@ -20,9 +20,10 @@
   "repo": "obra/superpowers",
   "branch": "main",
   "path": "skills/using-superpowers",
-  "url": "https://github.com/obra/superpowers/tree/main/skills/using-superpowers",
+  "url": "https://github.com/obra/superpowers/tree/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/using-superpowers",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "hash": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba",
+  "treeHash": "49d8246467e384c73243ddc22698cbc00ce94755221c4a8ced1f4fb3129bf6f3",
   "plugin": null,
   "install": [
     "/plugin install superpowers@claude-plugins-official"

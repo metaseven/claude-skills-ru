@@ -12,9 +12,10 @@
   "repo": "obra/superpowers",
   "branch": "main",
   "path": "skills/using-git-worktrees",
-  "url": "https://github.com/obra/superpowers/tree/main/skills/using-git-worktrees",
+  "url": "https://github.com/obra/superpowers/tree/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/using-git-worktrees",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "hash": "8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd",
+  "treeHash": "90cf9bff0b647fbb8571a2933c61304218fd29e52e00784c6043ddac3d4ba43f",
   "plugin": null,
   "install": [
     "/plugin install superpowers@claude-plugins-official"

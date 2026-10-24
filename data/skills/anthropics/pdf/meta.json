@@ -24,9 +24,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/pdf",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/pdf",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/pdf",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "9f78b8359fbd4943ad260a7a1e436e5a96503406d6c34e99f69223d647d85b9c",
+  "treeHash": "a08480c68bb2ccb42a9fa95b3b1d009333719135708d8373a73702d80a4a4c6e",
   "plugin": "document-skills",
   "install": [
     "/plugin marketplace add anthropics/skills",

@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import matter from 'gray-matter';
 import { Marked } from 'marked';
+import { parseFrontmatter } from '../../scripts/lib.mjs';
 
 const DATA_DIR = join(process.cwd(), 'data');
 const SKILLS_DIR = join(DATA_DIR, 'skills');
@@ -23,6 +23,7 @@ export interface Meta {
   url: string;
   commit: string;
   hash: string;
+  treeHash: string;
   plugin: string | null;
   install: string[];
 }
@@ -90,23 +91,43 @@ export function getSkills(): Skill[] {
   return skills;
 }
 
-// Относительные ссылки в SKILL.md (reference.md, scripts/…) ведут на файлы в GitHub.
+const escapeHtml = (s: string) =>
+  s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+
+// Markdown из чужих репозиториев: «сырой» HTML показываем как текст (никаких <script>, onclick и т.п.),
+// ссылки — только http(s)/относительные, картинки не загружаем (могут следить за посетителем).
 function renderer(meta: Meta) {
-  const blobBase = `https://github.com/${meta.repo}/blob/${meta.branch}/${meta.path}/`;
-  return new Marked({
-    gfm: true,
-    walkTokens(token) {
-      if ((token.type === 'link' || token.type === 'image') && !/^([a-z]+:|#|\/)/i.test(token.href)) {
-        token.href = blobBase + token.href.replace(/^\.\//, '');
-      }
+  const blobBase = `https://github.com/${meta.repo}/blob/${meta.commit}/${meta.path}/`;
+  const safeHref = (href: string) => {
+    if (/^https?:\/\//i.test(href) || href.startsWith('#')) return href;
+    if (/^[a-z][a-z0-9+.-]*:/i.test(href) || href.startsWith('//') || href.startsWith('/')) return null;
+    return blobBase + href.replace(/^\.\//, '');
+  };
+  const md = new Marked({ gfm: true });
+  md.use({
+    renderer: {
+      html({ text }) {
+        return escapeHtml(text);
+      },
+      link({ href, tokens }) {
+        const url = safeHref(href);
+        const label = this.parser.parseInline(tokens);
+        return url ? `<a href="${escapeHtml(url)}" rel="nofollow noopener noreferrer">${label}</a>` : label;
+      },
+      image({ href, text }) {
+        const url = safeHref(href);
+        const label = escapeHtml(text || 'изображение');
+        return url ? `<a href="${escapeHtml(url)}" rel="nofollow noopener noreferrer">[${label}]</a>` : `[${label}]`;
+      },
     },
   });
+  return md;
 }
 
 export function renderSkill(skill: Skill, lang: 'ru' | 'en'): string | null {
   const file = join(skill.dir, lang === 'ru' ? 'SKILL.ru.md' : 'SKILL.en.md');
   if (!existsSync(file)) return null;
-  const { content } = matter(readFileSync(file, 'utf8'));
+  const { content } = parseFrontmatter(readFileSync(file, 'utf8'));
   return renderer(skill.meta).parse(content) as string;
 }
 

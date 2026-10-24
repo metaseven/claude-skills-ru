@@ -12,9 +12,10 @@
   "repo": "obra/superpowers",
   "branch": "main",
   "path": "skills/verification-before-completion",
-  "url": "https://github.com/obra/superpowers/tree/main/skills/verification-before-completion",
+  "url": "https://github.com/obra/superpowers/tree/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/verification-before-completion",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "hash": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+  "treeHash": "d814ecc4d6a11c2f0a28611421ba30f003732973845bb2eeef835f727b372539",
   "plugin": null,
   "install": [
     "/plugin install superpowers@claude-plugins-official"

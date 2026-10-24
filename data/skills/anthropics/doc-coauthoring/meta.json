@@ -12,9 +12,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/doc-coauthoring",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/doc-coauthoring",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4",
+  "treeHash": "ac9739b49547f7f2ea448ba5f3a8ae68a4ebf9c150a1d496aff948dfd3fe002e",
   "plugin": "example-skills",
   "install": [
     "/plugin marketplace add anthropics/skills",

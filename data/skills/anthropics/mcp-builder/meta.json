@@ -22,9 +22,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/mcp-builder",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/mcp-builder",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295",
+  "treeHash": "0bfa256d9b69c986653e6671098f638ab93c1a9ea3b00294064721db99467c6b",
   "plugin": "example-skills",
   "install": [
     "/plugin marketplace add anthropics/skills",

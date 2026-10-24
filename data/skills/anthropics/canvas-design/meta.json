@@ -95,9 +95,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/canvas-design",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/canvas-design",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "a1f288079624402f30682753c1d43920b6664785698d21d3e7aa197450a6448b",
+  "treeHash": "6a5f1af9694541f5f2152c344e9e53b6be0dceb51ddbcf7a75a773728663a63e",
   "plugin": "example-skills",
   "install": [
     "/plugin marketplace add anthropics/skills",

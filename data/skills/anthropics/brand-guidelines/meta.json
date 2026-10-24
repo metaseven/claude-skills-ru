@@ -14,9 +14,10 @@
   "repo": "anthropics/skills",
   "branch": "main",
   "path": "skills/brand-guidelines",
-  "url": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
+  "url": "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/brand-guidelines",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "hash": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe",
+  "treeHash": "ceabc11d075e174c92cb51df6a4ee19e5effd8a713d1529383c35a4eaa19eb4d",
   "plugin": "example-skills",
   "install": [
     "/plugin marketplace add anthropics/skills",
